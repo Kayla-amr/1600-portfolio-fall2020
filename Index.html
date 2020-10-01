@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayla Macias</title>
-</head>
-<body>
-    <nav>
-        <ul class="mynav">        
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="about.html">About</a></li>
-        <li><a href="my-work.html">My Work</a></li>
-        <li><a href="connect.html">Connect</a></li>
-        </ul>
-        <div class="keepOpen"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayla's Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section id= "welcome-section">
-        <h1>About</h1>
+    <section id="welcome-section">
+      <h1>Kayla Macias</h1>
+      <h3>These are some of my projects</h3>
     </section>
-    <section>Work</section>
-    <section>Contact</section>
-
-</body>
+    <section id="projects" class="projects-section">
+      <h1>Projects</h1>
+      <h2>These are some of my projects</h2>
+      <div class="projects-grid">
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="https://picsum.photos/300/300" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="https://picsum.photos/300/300" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a href="#" target="_blank" class="project project-tile">
+          <img class="project-image" src="https://picsum.photos/300/300" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/kayla-amr01"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a id="profile-link"
+          href="https://github.com/kayla-amr"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-github">GitHub</i
+        ></a>
+        <a id="profile-link"
+          href="https://twitter.com/kayla_amr"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-twitter">Twitter</i
+        ></a>
+        <a id="profile-link"
+          href="mailto:anahirivera99@live.com"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fas fa-at">Send an email</i
+        ></a>
+        <a id="profile-link"
+          href="tel:555-867-5309"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fas fa-mobile-alt"> Call Me</i
+        ></a>
+      </div>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
