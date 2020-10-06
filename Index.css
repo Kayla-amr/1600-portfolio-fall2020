@@ -56,17 +56,25 @@
     width: 100%;
     height: 100vh;
       color:#2b1a04;
-      background-image: linear-gradient(135deg, #ffc508 0%, #2b1a04 100%);
+      background-image: linear-gradient(135deg, #ffc508 , #2b1a04 );
       font-size: x-large;
+  }
+  #welcome-section h1{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 122px;
   }
 
   /*PROJECT SETTINGS*/
+  h1{ 
+    font-size: 5.4rem;
+    color:#2b1a04;}
+
   .projects-section {
-      font-size: 2.4rem;
-      color:#2b1a04;
+      color: #2b1a04;
+      font-size: 14px;
       text-align: center;
       padding: 10rem 2rem;
-      background: #f3cc60; 
+      background: #dfad0a; 
   }
   
   .project-tile{
@@ -74,13 +82,9 @@
     flex-direction: column;
     justify-content: space-between;
     justify-self: center;
-  }
-  
-  .project-tile{
     font-size: x-large;
     text-align: center;
   }
-
   .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -127,7 +131,7 @@
     p,h6, .contact-details {
       font-size: 2.4rem;
       color: #2b1a04;
-      text-shadow: 2px 2px 1px #be9e0f;
+      text-shadow: 2px 2px 1px #91720c;
       transition: transform 0.3s ease-out;
     }
     p{
@@ -148,7 +152,7 @@
   
     @media screen and (max-width: 30em) {
       #welcome-section {
-        background-image: linear-gradient(270deg, #a84f3c 0%, #9df57a 100%);
+        background-image: linear-gradient(270deg, #ffffff 0%, #daa025 100%);
         font-size: small;
       }
     }
