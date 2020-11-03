@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #ffe;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+  }
+  header,
+  h1,
+  #logo {
+    font-family: "Berkshire Swash", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 2px;
+  }
+  /*Headers and paragraphs*/
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  p,
+  ul {
+    font-size: 14px;
+    font-weight: 100px;
+    line-height: 1.5;
+  }
+  /*Information Section*/
+  #info {
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    padding: 4px;
+  }
+  .profile-photo {
+    height: 205px;
+    border-top: 18px solid #000;
+  }
+  
+  .name-date {
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .education {
+    background-color: #d69900;
+    align-items: center;
+    padding: 5px;
+  }
+  .bio {
+    width: 100%;
+    margin-left: 12px;
+  }
+  
+  /*Icon Section*/
+  #icons {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    font-size: 14px;
+  }
+  figure > img {
+    max-height: 145px;
+    max-width: 180px;
+  }
+  figcaption {
+    max-width: 180px;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+    background-color: #111;
+    font-family: "Inconsolata", monospace;
+  }
+  
+  /*Interest Section*/
+  #interest {
+    font-family: "Inconsolata", monospace;
+  }
+  .react {
+    background-color: #d69900;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  /*Footer*/
+  footer {
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+  }
+  

@@ -1,0 +1,278 @@
+/*CSS reset*/
+body, p, h1, h2, h3, h4, h5, h6{
+    padding:0px;
+    margin: 0px;
+    
+    /*Google Fonts*/
+    font-family: 'Inconsolata', monospace;}
+
+/*box model fix here*/
+*{ -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box; 
+    box-sizing: border-box;} 
+/*--body--*/
+body{
+    background-color: #aeaeae;
+    background-image: url(photos/icons/background.gif);
+    background-repeat: repeat-x;
+}
+/*--gradient--*/
+div#gradient {
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #d69900;
+}
+
+
+/*Header*/
+header {background-color: #f9f9f9;
+        background-image: url(photos/icons/cameralogo.png);
+        background-repeat: no-repeat;
+        background-position: center;}
+header h1{padding-left:2%;
+          font-family: 'Berkshire Swash', cursive; 
+          font-size: 50px;
+          text-align: center;
+          color: rgb(214, 153, 0)}
+header h2{padding: 0px 0px 10px 2%;
+          color: #4b4b4b;
+          text-align: center;}
+
+/*nav*/
+/*--phone nave here--*/
+@media only screen and (max-width: 600px){
+    nav{
+     background-color: black; 
+     background: linear-gradient(to bottom, black 0%, #d69900 100%);
+     border-top: solid 5px rgb(214, 153, 0);
+     border-bottom: solid 5px #d69900;
+     padding: .5rem 7% 0;
+    }
+    nav ul.mynav li{
+        list-style-type: none;
+        padding: 0 7% 0 0;
+    }
+    nav ul.mynav li a{
+        padding: .2rem 1rem;
+        margin-bottom: .5rem;
+        background: whitesmoke;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        border: solid 1px whitesmoke;
+        border-radius: .5rem;
+    }
+    nav ul.mynav li a:hover{
+        background-color: #d69900;
+        color: black;        
+    }
+    nav ul.mynav li.active a{ 
+    background-color: #d69900;
+    color:whitesmoke}
+}
+
+/*--end phone--*/
+
+/*--desktop nave here--*/
+@media only screen and (min-width: 601px){
+   nav {
+     background-color: black; 
+     background: linear-gradient(to bottom, black 0%, #d69900 100%);
+     border-top: solid 5px rgb(214, 153, 0);
+     border-bottom: solid 5px #d69900;
+     padding: 0px 0px 10px 0px;
+    }
+nav ul{color: #f9f9f9;
+       list-style-type: circle}
+nav ul.mynav li {float: left;
+                  list-style-type: none;}
+nav ul.mynav li a {
+                   display: block;
+                   padding: 0px 20px 2px 20px;
+                   color: #d69900;
+                   text-decoration: none;
+                   border-left: solid 1px #ffffff;
+                   border-right: solid 1px #ffffff}
+nav ul.mynav li.active a{background-color: whitesmoke}
+.keepOpen{clear: both;}
+nav ul.mynav li a:hover { background-color: #ffffff}
+}
+/*--end desktop--*/
+
+/*Styling Images*/
+figure.index{
+    margin: 0 0 0 2%;
+    padding: 6px;
+    float: right;
+    border: 5px solid black;
+    background-color: #d69900;
+    background-size: 1px;
+    width: 40%;
+    text-align: center;}
+figure.index img{
+    width: 100%}
+
+figure.aboutme{
+    margin: 0 0 0 2%;
+    padding: 6px;
+    float: right;
+    border: 5px solid black;
+    background-color: #d69900;
+    width: 40%;
+    text-align: center;}
+figure.aboutme img {
+    width: 100%;}
+
+figure.MyGallery {
+    padding: 3px;
+    margin: 2%;
+    float: left;
+    border: 5px solid black;
+    background-color: #d69900;
+    background-size: 1px;
+    text-align: center;
+}
+
+/*main*/
+main {
+    background-color: #f9f9f9;
+    padding: 8px 2%;
+     }
+main h1{border-bottom: 1px solid LightSlateGray;
+        margin-bottom: 20px;
+        color: #d69900;
+        font-size: 60px}
+main h2{margin:20px 0px 5px 0px;
+        color: black}
+main p.intro {padding-left: 20px}
+main p, dl, ul, ol {
+    color: #4b4b4b;
+    padding-left: 40px;
+    line-height: 150%;
+    }
+main ol.topics, ul.facts, dl{padding: 0px 0px 0px 2%;
+                             margin: 20px 2%;
+                             list-style-image: url(photos/icons/diamond.png)}
+main ol.steps {
+    margin: 0 0 .8rem 2%;
+    padding: 0 0 4rem 2%;
+    list-style-image:url(photos/icons/heart.png);
+}
+main ul.topics{
+    list-style-image: url(photos/icons/heartcamera.png)}
+
+main ul.topics li a{
+        padding: .2rem 1rem;
+        margin-bottom: .5rem;
+        background: whitesmoke;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        border: solid 0px whitesmoke;
+        border-radius: .5rem;}
+
+main blockquote {margin: 20px 2% ;
+                 font-style: italic;
+                 font-size: 18px;
+                 color: #4b4b4b;
+                 text-align: center}
+main a {color: #d69900;}
+main a:hover{color:saddlebrown;}
+main .thanks{
+    text-align: center;
+}
+main audio{
+    padding: 0px;
+    margin: 3%
+}
+
+/*--Maps--*/
+iframe.maps {
+    border: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+    height: 500px;
+}
+
+/*--Schedule--*/
+table.schedule{
+    border-collapse: collapse;
+    font-size: .8rem;
+    border: 1px solid #d69900;
+    margin: 0 1% 1rem 1%;
+    width: 96%;
+    margin-left: 2%;
+    height: 500px;
+}
+table.schedule th{
+    text-align: left;
+    background-color: #d69900;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    padding: .1rem .5rem;
+}
+table.schedule td{
+    padding: .5rem;
+    color: #d69900;
+    font-size: 25px;
+}
+table.schedule tr:nth-child(even){
+    background-color: #dfdfdf;
+}
+table.schedule tr:hover{
+    background-color: black
+}
+
+/*--Youtube Video--*/
+main iframe.ytvideo{
+width: 98%;
+margin: 1%;
+height: 320px;
+margin-bottom: 1rem;
+}
+
+/*--FORM STYLING--*/
+form.PhotoShoot fieldset {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: black
+}
+
+form.PhotoShoot legend {
+    font-weight: 600;
+    margin-left: 1rem;   
+}
+
+form.PhotoShoot span{
+    display: block;
+    padding: .8rem 0 0 .3rem;
+}
+
+form.PhotoShoot .userinfo{
+    width: 20rem;
+    color: gray;
+    border-radius: .6rem;
+    border: solid 1px;
+    padding: .4rem;
+}
+
+form.PhotoShoot .userbutton{
+width: 20rem;
+padding: .8rem;
+margin-left: 2%;
+background: #d69900;
+border: solid 1px #fff;
+border-radius: .6rem;
+}
+
+form.PhotoShoot .textarea{
+width: 40rem;
+height: 5rem;
+border: solid 1px #f4f4f4;
+}
+
+/*Footer*/
+footer {
+    padding: 20px 0px 20px 2%; 
+}
