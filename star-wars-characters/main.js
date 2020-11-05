@@ -1,4 +1,5 @@
 import { people } from '../Data/people.js'
+import { removeChildren} from '../utils/main.js'
 
 const mainContent = document.querySelector('#main')
 
@@ -62,10 +63,4 @@ function getLastNumber(url) {
         start++
     }
     return url.slice(start, end)
-}
-
-function removeChildren(container) {
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-      }
 }

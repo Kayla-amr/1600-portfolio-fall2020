@@ -1,19 +1,27 @@
-:root{
+:root {
     margin: 0;
     box-sizing: border-box;
 }
 
-header,footer{
+.container {
+    display: flex;
+}
+
+.main {
+    margin: 8rem 5rem 0 10rem;
+}
+
+header, footer {
     display: flex;
     justify-content: center;
     font-size: 1.75rem;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-li{
+li {
     list-style-type: none;
 }
