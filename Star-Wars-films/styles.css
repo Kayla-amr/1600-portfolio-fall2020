@@ -27,6 +27,7 @@ figcaption{
 
 }
 
+/* animation was helped by https://codepen.io/WebSonick/pen/vjmgu*/
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
