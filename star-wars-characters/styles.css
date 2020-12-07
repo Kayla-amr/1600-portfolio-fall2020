@@ -15,11 +15,82 @@
     justify-content: space-around;
 }
 
+body{
+    text-align: center;
+    background-color: #000;
+}
+
+button{
+width: 130px;
+height: 50px;
+border-radius: 10px;
+background-color: rgb(255, 230, 0);
+font-size: 20px;
+text-shadow: -1px 1px 1 black;
+color: #5a5a5a;
+}
+
 figure{
-    
+    margin: 10px;
 }
 
 figure img {
+    margin: 10px;
+    border: 5px solid #5a5a5a;
     max-height: 12rem;
 
+}
+
+figcaption{
+    padding: 4px;
+    font-family: monospace, bold;
+    font-size: 12;
+    color: whitesmoke;
+    
+
+}
+
+/* animation was helped by https://codepen.io/WebSonick/pen/vjmgu*/
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat;
+  z-index:-3;
+
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat;
+  z-index:-2;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
 }
