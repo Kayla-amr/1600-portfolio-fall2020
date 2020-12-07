@@ -1,3 +1,4 @@
+//reusable async function to etch data from the provided url
 async function getAPIData(url) {
     try {
         const response = await fetch(url)
@@ -8,6 +9,7 @@ async function getAPIData(url) {
     }
 }
 
+//get API data
 function loadPage() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
         (async (data) => {
@@ -48,7 +50,7 @@ function populateCardFront(pokemon) {
     let frontLabel = document.createElement('p')
     let frontImage = document.createElement('img')
     frontLabel.textContent = pokemon.name
-    frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
+    frontImage.src = `./images/pokemon/${getImageFileName(pokemon)}.png`
     cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
     return cardFront
@@ -103,5 +105,5 @@ function Pokemon(name, height, weight, abilities) {
     this.id = 900
 }
 
-let thoremon = new Pokemon('Thoremon', 450, 200, ['gorge', 'sleep', 'cough'])
-console.log(thoremon)
+let kaylamon = new Pokemon('kaylamon', 450, 200, ['macias', 'love', 'laugh'])
+console.log(kaylamon)
