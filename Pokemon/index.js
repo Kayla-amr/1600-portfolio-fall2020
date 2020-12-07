@@ -1,4 +1,4 @@
-//reusable async function to etch data from the provided url
+// Reusable async function to fetch data from the provided url
 async function getAPIData(url) {
     try {
         const response = await fetch(url)
@@ -9,7 +9,7 @@ async function getAPIData(url) {
     }
 }
 
-//get API data
+// now, use the async getAPIData function
 function loadPage() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
         (async (data) => {
@@ -23,10 +23,16 @@ function loadPage() {
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
+const newButton = document.querySelector('#newPokemon')
 
 loadButton.addEventListener('click', () => {
     loadPage()
     loadButton.disabled = true
+})
+
+newButton.addEventListener('click', () => {
+  let pokeName = prompt("What's your new Pokemon's name?");
+  populatePokeCard(createNewPokemon(pokeName))
 })
 
 function populatePokeCard(pokemon) {
@@ -50,7 +56,7 @@ function populateCardFront(pokemon) {
     let frontLabel = document.createElement('p')
     let frontImage = document.createElement('img')
     frontLabel.textContent = pokemon.name
-    frontImage.src = `./images/pokemon/${getImageFileName(pokemon)}.png`
+    frontImage.src = `/images/${getImageFileName(pokemon)}.png`
     cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
     return cardFront
@@ -68,20 +74,23 @@ function populateCardBack(pokemon) {
         abilityList.appendChild(abilityName)
     })
     let movesLabel = document.createElement('h3')
-    movesLabel.textContent = 'Most Accurate Move:'
+    movesLabel.textContent = 'Stats:'
     let moveAccuracy = document.createElement('h4')
-    const mostAccurateMove = getBestAccuracyAndPower(pokemon.moves)
-    //console.log(mostAccurateMove.move)
-    //moveAccuracy.textContent = `${mostAccurateMove.move.name}`
+    let pokeWeight = document.createElement('h5')
+    pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
+
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
+    cardBack.appendChild(pokeWeight)
     return cardBack
 }
 
 function getBestAccuracyAndPower(pokemoves) {
     return pokemoves.reduce((mostAccurate, move) => {
+
+        //console.log(move.move.url)
         getAPIData(move.move.url).then
             (async (data) => {
                 console.log(data.accuracy, data.power)
@@ -97,13 +106,15 @@ function getImageFileName(pokemon) {
     }
 }
 
-function Pokemon(name, height, weight, abilities) {
+function Pokemon(name, height, weight, abilities, moves) {
     this.name = name
     this.height = height
     this.weight = weight
     this.abilities = abilities
     this.id = 900
+    this.moves = moves
 }
 
-let kaylamon = new Pokemon('kaylamon', 450, 200, ['macias', 'love', 'laugh'])
-console.log(kaylamon)
+function createNewPokemon(name) {
+  return new Pokemon(name, 450, 200, ['kayla', 'love', 'laugh'], ['water', 'wind'])
+}
