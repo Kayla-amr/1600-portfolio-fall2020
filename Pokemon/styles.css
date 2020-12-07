@@ -3,6 +3,16 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: rgba(0, 128, 0, 0.884);
+}
+h1{
+  font-family: 'pokemon';
+  font-size: 80px;
+  color: #e7c00f;
+  text-shadow: -5px 5px 0 rgb(25, 22, 211);
+  text-align: center;
+}
 .pokemonGrid {
   display: flex;
   flex-wrap: wrap;
@@ -10,9 +20,9 @@
 }
 
 .scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #CCC;
+  width: 250px;
+  height: 330px;
+  border: 10px solid #CCC;
   margin: 10px;
   perspective: 600px;
 }
@@ -34,11 +44,19 @@
 }
 
 .card__face--front {
-  background: red;
+  font-family: 'pokemon';
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #e7c00f;
+  text-shadow: -1px 1px 0 rgb(25, 22, 211);
+  background-image: linear-gradient(130deg, #C0C0C0, #808080, #C0C0C0, #A9A9A9);
 }
 
 .card__face--back {
-  background: #444;
+  background-color: #000000;
+  text-align: center;
+  font-size: 25px;
   color: #eee;
   transform: rotateY(180deg);
 }
