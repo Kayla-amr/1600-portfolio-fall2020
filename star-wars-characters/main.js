@@ -1,5 +1,5 @@
-import { people } from '../data/people.js'
-import { removeChildren, getLastNumber } from '../utils/index.js'
+import { people } from '../Data/people.js'
+import { removeChildren, getLastNumber } from '../utils/main.js'
 
 const mainContent = document.querySelector('#main')
 
