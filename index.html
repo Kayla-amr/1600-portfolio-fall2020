@@ -1,68 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Practice Project1</title>
-  <meta name="description" content="An interactive getting started guide.">
-  <link rel="stylesheet" href="classproject1.1.css">
-</head>
-<!-- Header and Logo-->
-<header>
-  <img id="logo" src="Logo1.2.png">
-  <h1>KAMRA</h1>
-</header>
-<main>
-  <!-- Information-->
-  <section id="info">
-    <img class="profile-photo" src="https://media-exp1.licdn.com/dms/image/C5603AQEjKJEj-vwTXw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=JErmQ8RcWKFJKtIF57v3lvvgmjzG5Wxv7PLnwn0g9jo">
-    <div class="bio">
-      <div class="name-date">
-        <h2>Kayla Macias</h2>
-        <time datetime="08/31/2020">08/31/2020</time>
+    <title>Kayla's Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Index.css" />
+  </head>
+  <!--Start of page-->
+  <body>
+    <!--Navigation-->
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Welcome-->
+    <section id="welcome-section">
+      <h1 class="name">Kayla Macias</h1>
+      <h3>Web Design Development Major</h3>
+    </section>
+    <section id="projects" class="projects-section">
+<!--Projects-->
+      <br><h1 class="work">Projects</h1>
+      <h2>These are some of my projects</h2></br>
+      <div class="projects-grid">
+        <a href="http://kamrasphotos.netlify.app" target="_blank" class="Kamra Photos">
+          <img class="project-image" src="../images/personal profolio/kamraphotos.png" />
+          <p class="project-title">
+            <span class="code"></span>
+            Kamra Photos
+            <span class="code"></span>
+          </p>
+        </a>
+        <a href="https://kaylastechnologyinterests.netlify.app/" target="_blank" class="Technology Interest">
+          <img class="project-image" src="../images/personal profolio/techinterest.png" />
+          <p class="project-title">
+            <span class="code"></span>
+            Technology Interest
+            <span class="code"></span>
+          </p>
+        </a>
+        <a href="/Star-Wars-films/index.html" target="_blank" class="project project-tile">
+          <img class="project-image" src="../images/personal profolio/starwarsfilms.png" />
+          <p class="project-title">
+            <span class="code"></span>
+            Star Wars Films
+            <span class="code"></span>
+          </p>
+        </a>
+        <a href="/Star-Wars-films/index.html" target="_blank" class="project project-tile">
+          <img class="project-image" src="../images/personal profolio/starwarscharacters.png" />
+          <p class="project-title">
+            <span class="code"></span>
+            Star Wars Characters
+            <span class="code"></span>
+          </p>
+        </a>
+        <a href="/Star-Wars-films/index.html" target="_blank" class="project project-tile">
+          <img class="project-image" src="../images/personal profolio/pokemoncard.png" />
+          <p class="project-title">
+            <span class="code"></span>
+            Pokemon Cards
+            <span class="code"></span>
+          </p>
+        </a>
       </div>
-      <div class="education">
-        <h3>I chose to learn web devlopment because:</h3>
-        <ul>
-          <li>It's a different form of art for me</li>
-          <li>I can use it to show my photography </li>
-          <li>coding is exciting</li>
-          <li>I took digital imaging in high school for 3 years and I wanted to keep learning more about it</li>
-        </ul>
-      </div>
-    </div>
-    <!-- Technology with caption-->
-  </section>
-  <section id="icons">
-    <figure>
-      <img src="https://cdn.worldvectorlogo.com/logos/javascript.svg" alt="JS logo">
-      <figcaption>This is a new program for me!</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.worldvectorlogo.com/logos/html-5.svg" alt="HTML5 logo">
-      <figcaption>Interesting coding process</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.worldvectorlogo.com/logos/graphql.svg" alt="GraphQL logo">
-      <figcaption>I never heard of this program</figcaption>
-    </figure>
-    <figure>
-      <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="VueJS logo">
-      <figcaption>This is also a program I've never heard of</figcaption>
-    </figure>
-  </section>
-  <!-- Interests-->
-  <section id="interest">
-    <h4>I'm most excited to learn about...</h4>
-    <div class="react">
-      <h5>React</h5>
-      <p>The things I am most excited to learn about in this class is 1. JavaScript, it's one of the most useful codes and I hope to understand it and be able to gain this skill 2. CSS, In Fall 2019 I took the course DGM2120 and I liked the idea of coding HTML and CSS so I hope to learn more through this course 3. how to overall continue practicing coding to keep gaining experience. I was originally majoring in Computer Science but I feel Wed Design Development is more suited for me and more exciting to learn. I still don't know what or where I can use this degree but I hope to find that out soon by just continuing in taking courses and completing the degree.</p>
-    </div>
-  </section>
+    </section>
+    <section id="contact" class="contact-section">
+      <!--Contact-->
+        
+      <h6>Contact</h6>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/kayla-amr01"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+          <a
+            href="https://linkedin.com/in/kayla-amr/"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        <a id="profile-link"
+          href="https://github.com/kayla-amr"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-github">GitHub</i
+        ></a>
+        <a id="profile-link"
+          href="https://twitter.com/kayla_amr"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-twitter">Twitter</i
+        ></a>
+        <a id="profile-link"
+          href="mailto:example@example.com"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fas fa-at">Send an email</i
+        ></a>
 
-</main>
-<!-- Footer -->
-<footer>
-  <p>&copy; 2019 &bull; Utah Valley University &bull; Built by Kayla Macias</p>
-</footer>
+        <p>&copy; 2019 &bull; Utah Valley University &bull; Built by Kayla Macias</p>
+      </div>
+    </section>
+  </body>
+</html>
