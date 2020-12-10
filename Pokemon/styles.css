@@ -51,7 +51,6 @@ button{
 .scene {
   width: 250px;
   height: 330px;
-  border: 10px solid #CCC;
   margin: 10px;
   perspective: 600px;
 }
@@ -63,6 +62,7 @@ button{
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  border: 10px solid #CCC;
 }
 
 .card__face {
