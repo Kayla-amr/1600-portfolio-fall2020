@@ -90,6 +90,13 @@ button{
   transform: rotateY(180deg);
 }
 
+img{
+  margin-top: 10%;
+}
+p{
+  margin: -20px;
+}
+
 h3{ 
   margin: 10% 0px 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
