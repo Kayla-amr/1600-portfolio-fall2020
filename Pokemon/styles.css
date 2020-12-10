@@ -89,8 +89,23 @@ button{
   color: #eee;
   transform: rotateY(180deg);
 }
+
+h3{ 
+  margin: 10% 0px 10px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #e7c00f;
+}
+
+h4, h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
 ul{
-  text-align: left;
+  list-style-type: none;
+  text-align: center;
+  padding: 2px;
 }
 
 
