@@ -120,3 +120,16 @@ ul{
   transform: rotateY(180deg);
 }
 
+ /*DEVICE USE*/
+ @media (max-width: 28.75em) {
+
+  .pokemonGrid{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .pokemonGrid {
+   justify-content: center;
+  }
+}
