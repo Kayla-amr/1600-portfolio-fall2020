@@ -11,7 +11,7 @@
      * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
     */
     font-size: 62.5%;
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -158,9 +158,12 @@
       }
     }
   
-    @media screen and (max-width: 30em) {
+    @media screen and (max-width: 75em) {
       #welcome-section {
-        background-image: linear-gradient(270deg, #ffffff 0%, #daa025 100%);
-        font-size: small;
+        background-image: linear-gradient(135deg, #868686 , #fff, #868686, #fff);
+        font-size: large;
+      }
+      .name{
+        text-align: center;
       }
     }
