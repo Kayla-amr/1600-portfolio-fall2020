@@ -89,6 +89,10 @@ button{
   color: #eee;
   transform: rotateY(180deg);
 }
+ul{
+  text-align: left;
+}
+
 
 .card.is-flipped {
   transform: rotateY(180deg);

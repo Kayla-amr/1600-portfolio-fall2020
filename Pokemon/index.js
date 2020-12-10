@@ -78,12 +78,16 @@ function populateCardBack(pokemon) {
     let moveAccuracy = document.createElement('h4')
     let pokeWeight = document.createElement('h5')
     pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
+    let pokeHeight = document.createElement('h5')
+    pokeHeight.textContent = `Height: ${pokemon.height} cm`
+    
 
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(pokeWeight)
+    cardBack.appendChild(pokeHeight)
     return cardBack
 }
 

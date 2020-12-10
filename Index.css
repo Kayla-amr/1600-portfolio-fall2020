@@ -152,10 +152,7 @@
 
     /*DEVICE USE*/
     @media (max-width: 28.75em) {
-      body{
-        width: 100%;
-      }
-      
+
       .contact-links {
         flex-direction: column;
         text-align: center;
@@ -167,9 +164,6 @@
     }
   
     @media screen and (max-width: 75em) {
-      body{
-        width: 100%;
-      }
       #welcome-section {
         background-image: linear-gradient(135deg, #868686 , #fff, #868686, #fff);
         font-size: large;
