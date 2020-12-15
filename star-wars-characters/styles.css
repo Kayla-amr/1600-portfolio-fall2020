@@ -32,6 +32,7 @@ color: #5a5a5a;
 
 figure{
     margin: 10px;
+    
 }
 
 figure img {
@@ -43,11 +44,13 @@ figure img {
 
 figcaption{
     padding: 4px;
-    font-family: monospace, bold;
-    font-size: 12;
-    color: whitesmoke;
     width: 100px;
-
+    font-size: 12;
+    display: table;
+    text-align: center;
+    margin-left: 18%;
+    color: whitesmoke;
+    font-family: monospace, bold;   
 }
 
 /* animation was helped by https://codepen.io/WebSonick/pen/vjmgu*/
