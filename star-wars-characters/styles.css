@@ -17,7 +17,7 @@
 
 body{
     text-align: center;
-    background-color: #000;
+    
 }
 
 button{
@@ -57,20 +57,8 @@ figcaption{
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
+    
 }
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-
 .stars, .twinkling{
   position: absolute;
   top:0;
@@ -82,13 +70,15 @@ figcaption{
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat;
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
+  background-repeat: repeat;
   z-index:-3;
 
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat;
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png);
+  background-repeat: repeat;
   z-index:-2;
 
   -moz-animation:move-twink-back 200s linear infinite;
