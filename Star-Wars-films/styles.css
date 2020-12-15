@@ -3,8 +3,7 @@
     box-sizing: border-box;  
 }
 
-main{
-    background-color:#000000;
+main{    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
