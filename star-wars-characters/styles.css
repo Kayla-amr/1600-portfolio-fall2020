@@ -16,6 +16,9 @@
 }
 
 body{
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
+    background-repeat: repeat;
+    z-index:-2;
     text-align: center;
     
 }
@@ -59,7 +62,7 @@ figcaption{
     to {background-position:-10000px 5000px;}
     
 }
-.stars, .twinkling{
+.twinkling{
   position: absolute;
   top:0;
   left:0;
@@ -69,21 +72,16 @@ figcaption{
   height:100%;
 }
 
-.stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png);
-  background-repeat: repeat;
-  z-index:-3;
-
-}
-
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png);
-  background-repeat: repeat;
-  z-index:-2;
-
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}
+        margin: 0;
+        box-sizing: border-box;
+        background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png);
+        background-repeat: repeat;
+        z-index:-2;
+      
+        -moz-animation:move-twink-back 200s linear infinite;
+        -ms-animation:move-twink-back 200s linear infinite;
+        -o-animation:move-twink-back 200s linear infinite;
+        -webkit-animation:move-twink-back 200s linear infinite;
+        animation:move-twink-back 200s linear infinite;
+    }
